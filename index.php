@@ -84,7 +84,7 @@ Buy / sell NFT using Pi coins. </p>
 
 	  echo '<div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="/img/NFT_' . $data['ID'] . '" data-holder-rendered="true">
+                <img class="card-img-top" src="/img/NFT_' . $data['ID'] . '.jpg" data-holder-rendered="true">
                  <div class="card-body" style=" height: 150px">
                   <p class="card-text">' . $data['DESCRIPTION'] . '</p>
                   <div class="d-flex justify-content-between align-items-center" style="  height: 20px;  position: relative;   margin: 0;  position: absolute;  left: 50%;  -ms-transform: translateX(-50%);  transform: translateX(-50%); ">
