@@ -1,5 +1,13 @@
 <?php
 
+try{
+    $pdo = new PDO('sqlite:'.dirname(__FILE__).'/database.sqlite');
+    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // ERRMODE_WARNING | ERRMODE_EXCEPTION | ERRMODE_SILENT
+} catch(Exception $e) {
+    echo "Impossible d'accéder à la base de données SQLite : ".$e->getMessage();
+    die();
+}
 ?>
 
 <html lang="en"><head>
@@ -44,8 +52,12 @@ Open marketplace of NFTs
 Minting new NFT from image, video, gif etc. 
 Buy / sell NFT using Pi coins. </p>
           <p>
-            
-            
+<?php
+	  $query = $pdo->query('SELECT * from NFT');
+	  while ($data = $query->fetch()) {
+	  	echo $data['DESCRIPTION'] . '</ br>;
+	  }
+?>       
           </p>
         </div>
       </section>
