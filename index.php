@@ -56,9 +56,9 @@ Minting new NFT from image, video, gif etc.
 Buy / sell NFT using Pi coins. </p>
           <p>
 <?php
-	  $query = $pdo->query('SELECT * from NFT');
+	  $query = $pdo->query('SELECT * FROM NFT');
 	  while ($data = $query->fetch()) {
-	  	echo $data['DESCRIPTION'] . '</ br>;
+	  	echo $data['DESCRIPTION'] . '</ br>';
 	  }
 ?>       
           </p>
