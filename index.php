@@ -54,13 +54,7 @@ Since this is yet only in corners of my mind, this will have below special featu
 Open marketplace of NFTs
 Minting new NFT from image, video, gif etc. 
 Buy / sell NFT using Pi coins. </p>
-          <p>
-<?php
-	  $query = $pdo->query('SELECT * FROM NFT');
-	  while ($data = $query->fetch()) {
-	  	echo $data['DESCRIPTION'] . '</ br>';
-	  }
-?>       
+          <p> 
           </p>
         </div>
       </section>
@@ -84,8 +78,8 @@ Buy / sell NFT using Pi coins. </p>
 	  echo '<div class="col-md-4">
               <div class="card mb-4 box-shadow">
 	       
-                <img class="card-img-top" src="/img/NFT_' . $data['ID'] . '.jpg" data-holder-rendered="true" style="height: 300px">
-                 <div class="card-body" style="height: 300px">
+                <img class="card-img-top" src="/img/NFT_' . $data['ID'] . '.jpg" data-holder-rendered="true" style="height: 300pt">
+                 <div class="card-body" style="height: 250pt">
                   <p class="card-text">' . $data['DESCRIPTION'] . '</p>
                   <div class="d-flex justify-content-between align-items-center">
                      
