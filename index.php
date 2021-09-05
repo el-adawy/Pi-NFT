@@ -98,16 +98,11 @@ Buy / sell NFT using Pi coins. </p>
  
                   </div>
                 </div>
-              </div>';
-
-	      if ($i % 2 == 0) {
-
-	      echo '</div><div class="row ">';
-
-	      }
+              ';
 	  }
 ?>             
-            </div> 
+	       </div>
+	       </div> 
        
 
             
