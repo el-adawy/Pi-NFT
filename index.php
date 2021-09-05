@@ -64,6 +64,9 @@ Buy / sell NFT using Pi coins. </p>
         <div class="container">
 
 <?php
+
+	if (!isset($_GET['nft-id'])){
+
 	  $query = $pdo->query('SELECT * FROM NFT');
 
 
@@ -95,9 +98,39 @@ Buy / sell NFT using Pi coins. </p>
 		</div>
               ';
 	  }
-?>             
-	       </div>
-	       </div> 
+         
+	 echo'      </div>
+	       </div> ';
+
+	       }
+
+	       else {
+	       //click on a nft
+	       
+	       
+	       echo '<div class="row ">
+	       
+	       <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+	       
+                <img class="card-img-top" src="/img/NFT_' . $_GET['nft-id'] . '.jpg" data-holder-rendered="true" style="height: 300px">
+                 <div class="card-body" style="height: 250px">
+                  <p class="card-text">' . $_GET['nft-id'] . '</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     
+					 <button type="button" class="btn btn-success">Buy</button>					 
+					 <button type="button" class="btn btn-danger" style="margin-left: 5px; margin-right: 5px">Sell</button>
+					 <button type="button" class="btn btn-info">Auction</button>
+
+                    
+ 
+                  </div>
+                </div>
+		</div>';
+
+
+	       }
+?>
        
 
             
