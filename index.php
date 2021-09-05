@@ -98,6 +98,8 @@ Buy / sell NFT using Pi coins. </p>
  
                   </div>
                 </div>
+		</div>
+		</div>
               ';
 	  }
 ?>             
