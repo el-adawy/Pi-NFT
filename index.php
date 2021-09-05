@@ -65,8 +65,7 @@ Buy / sell NFT using Pi coins. </p>
         </div>
       </section>
 
-      <div class="album py-5 bg-light" style="
-    padding-left: 400px;
+      <div class="album py-5 bg-light"
 ">
         <div class="container">
 
