@@ -110,6 +110,7 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 	       
 	  $query = $pdo->query('SELECT * FROM NFT WHERE ID = :id_get');
 	  $data = $query->execute(array('id_get' => htmlspecialchars($_GET['nft-id'])));
+	  $data = $query->fetch();
 	       
 	       echo '<div class="row ">
 	       
