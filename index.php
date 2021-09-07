@@ -84,7 +84,7 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 	       
                 <a href="index.php?nft-id=' . $data['ID'] .'"><img class="card-img-top" src="/img/nfts/NFT_' . $data['ID'] . '.jpg" data-holder-rendered="true" style="height: 300px"></a>
                  <div class="card-body" style="height: 250px">
-                  <p class="card-text">' . $data['DESCRIPTION'] . '</p>
+                  <p class="card-text">' . $data['TITLE'] . ' - @' . $data['CREATOR_NAME'] . '</p>
                   <div class="d-flex justify-content-between align-items-center">
                      
 					 <button type="button" class="btn btn-success">Buy</button>					 
@@ -103,11 +103,13 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 	 echo'      </div>
 	       </div> ';
 
-	       }
+	       }//endIf
 
 	       else {
 	       //click on a nft
 	       
+	  $query = $pdo->query('SELECT * FROM NFT WHERE ID = :id_get');
+	  $data = $query->execute(array('id_get' => htmlspecialchars($_GET['nft-id'])));
 	       
 	       echo '<div class="row ">
 	       
