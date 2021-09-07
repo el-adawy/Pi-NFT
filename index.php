@@ -185,21 +185,21 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
                   <div class="col-sm-6 col-md-3 item">
                       <h3>About</h3>
                       <ul>
-                          <li><a href="#">about us</a></li>
-                          <li><a href="#">about pi network</a></li>
-                          <li><a href="#">contact</a></li>
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">About Pi Network</a></li>
+                          <li><a href="#">Contact Us</a></li>
                           <li><a href="#">FAQ</a></li>
-                          <li><a href="#">terms of use</a></li>
-                          <li><a href="#">privacy policy</a></li>
+                          <li><a href="#">Terms Of Use</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
                       </ul>
                   </div>
                   <div class="col-md-6 item text">
                       <h3>UNEAT</h3>
-                      <p>collecting creativity</p>
+                      <p>Collecting Creativity</p>
                   </div>
                   <div class="col item social"><a href="https://www.facebook.com/PiCoreTeam/"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/uneat_pi"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="https://www.instagram.com/uneat.pi/"><i class="icon ion-social-instagram"></i></a></div>
               </div>
-              <p class="copyright">Uneat © 2021</p>
+              <p class="copyright">Uneat© 2021</p>
           </div>
       </footer>
 
