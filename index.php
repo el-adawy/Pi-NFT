@@ -97,6 +97,7 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
               </div>
             </div>
 	    </div>
+	    </div>
               ';
 	  }
          
