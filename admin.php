@@ -89,7 +89,11 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 
 <?php
 
-	if (!isset($_GET['nft-id'])){
+
+
+	echo '<div>
+			Administration Interface
+	      </div>';
 
 	  $query = $pdo->query('SELECT * FROM NFT');
 
@@ -126,46 +130,10 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 	    </div>
               ';
 	  }
-         
-	 echo'      </div>
+
+      </div>
 	       </div> ';
 
-	       }//endIf
-
-	       else {
-	       //click on a nft
-	       
-	  $query = $pdo->query('SELECT * FROM NFT WHERE ID = :id_get');
-	  $data = $query->execute(array('id_get' => htmlspecialchars($_GET['nft-id'])));
-	  $data = $query->fetch();
-	       
-	       echo '<div class="row">
-	       
-	      <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-	       
-                <a href="index.php?nft-id=' . $data['ID'] .'"><img class="card-img-top" src="/img/nfts/NFT_' . $data['ID'] . '.jpg" data-holder-rendered="true" style="height: 300px"></a>
-
-		<div class="card-body">
-                  <p class="card-text">' . $data['TITLE'] . ' - @' . $data['CREATOR_NAME'] . '</p>
-
-              <p class="card-text">' . $data['DESCRIPTION'] . '<br /></p>
-
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
-                </div>
-
-              <div class="d-flex justify-content-between align-items-center">
-<br>
-                <small class="text-muted"><img src="/img/pi.png" style="height: 10px; margin-bottom: 3px">  '. round($data['PRICE'], 3) . ' </small>
-              </div>
-            </div>
-	    </div>
-	    </div>';
-
-
-	       }
 ?>
        
 
