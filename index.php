@@ -69,7 +69,7 @@ try{
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Pi Network NFTs 🖼</h1>
+          <h1 class="jumbotron-heading"></h1>
           <p class="lead text-muted">
 NFTs are a fun and smart way to deal with cryptocurrencies.
 Here at uneat APP you can Buy awesome NFTs, sell your own and take chances bidding public NFTs.
