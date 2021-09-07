@@ -84,7 +84,7 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 	       
                 <a href="index.php?nft-id=' . $data['ID'] .'"><img class="card-img-top" src="/img/nfts/NFT_' . $data['ID'] . '.jpg" data-holder-rendered="true" style="height: 300px"></a>
 
-		<div class="card-body">
+		<div class="card-body" style="height: 320px">
                   <p class="card-text">' . $data['TITLE'] . ' - @' . $data['CREATOR_NAME'] . '</p>
 
               <p class="card-text">' . $data['DESCRIPTION'] . '<br />You can Buy now this NFT or wait until you can bid on a Auction.</p>
@@ -94,7 +94,7 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
                   <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
                 </div>
-                <small class="text-muted">'. round($data['PRICE'], 3) . ' <img src="/img/pi.png" style="height: 10px; margin-bottom: 5px"></small>
+                <small class="text-muted">'. round($data['PRICE'], 3) . ' <img src="/img/pi.png" style="height: 10px; margin-bottom: 3px"></small>
               </div>
             </div>
 	    </div>
