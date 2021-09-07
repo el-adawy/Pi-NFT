@@ -85,15 +85,11 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
                 <a href="index.php?nft-id=' . $data['ID'] .'"><img class="card-img-top" src="/img/nfts/NFT_' . $data['ID'] . '.jpg" data-holder-rendered="true" style="height: 300px"></a>
                  <div class="card-body" style="height: 250px">
                   <p class="card-text">' . $data['TITLE'] . ' - @' . $data['CREATOR_NAME'] . '</p>
-                  <div class="d-flex justify-content-between align-items-center">
                      
-					 <button type="button" class="btn btn-success">Buy</button>					 
-					 <button type="button" class="btn btn-danger" style="margin-left: 5px; margin-right: 5px">Sell</button>
-					 <button type="button" class="btn btn-info">Auction</button>
-
-                    
- 
-                  </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
+                </div>
                 </div>
 		</div>
 		</div>
