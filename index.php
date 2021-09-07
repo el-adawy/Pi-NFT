@@ -145,7 +145,7 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 	       
                 <a href="index.php?nft-id=' . $data['ID'] .'"><img class="card-img-top" src="/img/nfts/NFT_' . $data['ID'] . '.jpg" data-holder-rendered="true" style="height: 300px"></a>
 
-		<div class="card-body" style="height: 320px">
+		<div class="card-body">
                   <p class="card-text">' . $data['TITLE'] . ' - @' . $data['CREATOR_NAME'] . '</p>
 
               <p class="card-text">' . $data['DESCRIPTION'] . '<br />You can Buy now this NFT or wait until you can bid on a Auction.</p>
