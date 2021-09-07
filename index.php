@@ -47,14 +47,14 @@ try{
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Pi Network NFTs 🖼</h1>
-          <p class="lead text-muted">Now you already know that NFTs are likely to revolutionize things in multiple industries, marketplace for NFTs where user can buy, sell NFTs and even mint one of their own to store it or sell it on auction. 
+          <p class="lead text-muted">
+NFTs are a fun and smart way to deal with cryptocurrencies.
+Here at uneat APP you can Buy awesome NFTs, sell your own and take chances bidding public NFTs.
 
-Since this is yet only in corners of my mind, this will have below special features. 
+</p>
+          <p>
 
-Open marketplace of NFTs
-Minting new NFT from image, video, gif etc. 
-Buy / sell NFT using Pi coins. </p>
-          <p> 
+You can also enter special events to get special edition Pi NFTs, breeding NFT from featured artists or even get breeding NFTs. Are you curious? Welcome to uneat NFT world.
           </p>
         </div>
       </section>
@@ -82,19 +82,28 @@ Buy / sell NFT using Pi coins. </p>
               <div class="card mb-4 box-shadow">
 	       
                 <a href="index.php?nft-id=' . $data['ID'] .'"><img class="card-img-top" src="/img/nfts/NFT_' . $data['ID'] . '.jpg" data-holder-rendered="true" style="height: 300px"></a>
-                 <div class="card-body" style="height: 250px">
-                  <p class="card-text">' . $data['DESCRIPTION'] . '</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                     
-					 <button type="button" class="btn btn-success">Buy</button>					 
-					 <button type="button" class="btn btn-danger" style="margin-left: 5px; margin-right: 5px">Sell</button>
-					 <button type="button" class="btn btn-info">Auction</button>
+                 <div class="card-body">
 
-                    
- 
-                  </div>
+<div class="row">
+<p class="card-text">' . $data['TITLE'] . '</p>
+</div>
+
+<div class="row">
+
+</div>
+
+<div class="row">
+
+</div>
+              <p class="card-text">' . $data['DESCRIPTION'] . '</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
                 </div>
-		</div>
+                <small class="text-muted">' . $data['CREATOR_NAME'] . ' <img </small> //round($data['PRICE'], 3)  
+              </div>
+            </div>
 		</div>
               ';
 	  }
