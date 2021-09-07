@@ -87,13 +87,14 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 		<div class="card-body">
                   <p class="card-text">' . $data['TITLE'] . ' - @' . $data['CREATOR_NAME'] . '</p>
 
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">' . $data['DESCRIPTION'] . '<br />You can Buy now this NFT or wait until you can bid on a Auction.</p>
+
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
                 </div>
-                <small class="text-muted">'. round($data['PRICE'], 3) . '<img src="/img/pi.png" style="height: 10px"></small>
+                <small class="text-muted">'. round($data['PRICE'], 3) . ' <img src="/img/pi.png" style="height: 10px; margin-bottom: 5px"></small>
               </div>
             </div>
 	    </div>
