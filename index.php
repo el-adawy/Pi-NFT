@@ -54,6 +54,7 @@ Here at uneat APP you can Buy awesome NFTs, sell your own and take chances biddi
 </p>
           <p>
 
+
 You can also enter special events to get special edition Pi NFTs, breeding NFT from featured artists or even get breeding NFTs. Are you curious? Welcome to uneat NFT world.
           </p>
         </div>
@@ -82,28 +83,19 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
               <div class="card mb-4 box-shadow">
 	       
                 <a href="index.php?nft-id=' . $data['ID'] .'"><img class="card-img-top" src="/img/nfts/NFT_' . $data['ID'] . '.jpg" data-holder-rendered="true" style="height: 300px"></a>
-                 <div class="card-body">
+                 <div class="card-body" style="height: 250px">
+                  <p class="card-text">' . $data['DESCRIPTION'] . '</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                     
+					 <button type="button" class="btn btn-success">Buy</button>					 
+					 <button type="button" class="btn btn-danger" style="margin-left: 5px; margin-right: 5px">Sell</button>
+					 <button type="button" class="btn btn-info">Auction</button>
 
-<div class="row">
-<p class="card-text">' . $data['TITLE'] . '</p>
-</div>
-
-<div class="row">
-
-</div>
-
-<div class="row">
-
-</div>
-              <p class="card-text">' . $data['DESCRIPTION'] . '</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
+                    
+ 
+                  </div>
                 </div>
-                <small class="text-muted">' . $data['CREATOR_NAME'] . ' <img </small>   
-              </div>
-            </div>
+		</div>
 		</div>
               ';
 	  }
