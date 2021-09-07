@@ -96,7 +96,7 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 
               <div class="d-flex justify-content-between align-items-center">
 
-                <small class="text-muted">'. round($data['PRICE'], 3) . ' <img src="/img/pi.png" style="height: 10px; margin-bottom: 3px"></small>
+                <small class="text-muted" style="text-align: right">'. round($data['PRICE'], 3) . ' <img src="/img/pi.png" style="height: 10px; margin-bottom: 3px"></small>
               </div>
             </div>
 	    </div>
@@ -135,7 +135,7 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 
               <div class="d-flex justify-content-between align-items-center">
 
-                <small class="text-muted">'. round($data['PRICE'], 3) . ' <img src="/img/pi.png" style="height: 10px; margin-bottom: 3px"></small>
+                <small class="text-muted" style="text-align: right">'. round($data['PRICE'], 3) . ' <img src="/img/pi.png" style="height: 10px; margin-bottom: 3px"></small>
               </div>
             </div>
 	    </div>
