@@ -82,7 +82,7 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 	  echo '<div class="col-md-4">
               <div class="card mb-4 box-shadow">
 	       
-                <a href="index.php?nft-id=' . $data['ID'] .'"><img class="card-img-top" src="/img/nfts/NFT_' . $data['ID'] . '.jpg" data-holder-rendered="true" style="height: 300px"></a>
+                <a href="index.php?nft-id=' . $data['ID'] .'"><img class="card-img-top" src="/img/nfts/NFT_' . $data['ID'] . '.jpg" data-holder-rendered="true" style=""></a>
                  <div class="card-body" style="height: 250px">
                   <p class="card-text">' . $data['TITLE'] . ' - @' . $data['CREATOR_NAME'] . '</p>
                      
@@ -92,7 +92,7 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
                 </div>
                 </div>
 
-<small class="text-muted">' . round($data['PRICE'], 3) . ' <img src="/img/pi.png style="height: 2px"></small>
+<small class="text-muted">' . round($data['PRICE'], 3) . ' <img src="/img/pi.png" style="height: 2px"></small>
 
 		</div>
 		</div>
@@ -137,7 +137,7 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
                   <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
                 </div>
-                <small class="text-muted">' . round($data['PRICE'], 3) . ' <img </small>
+                <small class="text-muted">' . round($data['PRICE'], 3) . ' </small>
               </div>
             </div>
 
