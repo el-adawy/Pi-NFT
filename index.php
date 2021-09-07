@@ -91,6 +91,9 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
                   <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
                 </div>
                 </div>
+
+<small class="text-muted">' . round($data['PRICE'], 3) . ' <img src="/img/pi.png style="height: 2px"></small>
+
 		</div>
 		</div>
               ';
