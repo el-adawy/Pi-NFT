@@ -86,11 +86,13 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 
 		<div class="card-body" style="height: 320px">
                   <p class="card-text">' . $data['TITLE'] . ' - @' . $data['CREATOR_NAME'] . '</p>
+
+              <p class="card-text">You can Buy now this NFT or wait until you can bid on a Auction.</p>
+
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
                 </div>
-              <p class="card-text">' . $data['DESCRIPTION'] . '<br />You can Buy now this NFT or wait until you can bid on a Auction.</p>
 
               <div class="d-flex justify-content-between align-items-center">
 
@@ -123,11 +125,13 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 
 		<div class="card-body" style="height: 320px">
                   <p class="card-text">' . $data['TITLE'] . ' - @' . $data['CREATOR_NAME'] . '</p>
+
+              <p class="card-text">' . $data['DESCRIPTION'] . '<br />You can Buy now this NFT or wait until you can bid on a Auction.</p>
+
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
                 </div>
-              <p class="card-text">' . $data['DESCRIPTION'] . '<br />You can Buy now this NFT or wait until you can bid on a Auction.</p>
 
               <div class="d-flex justify-content-between align-items-center">
 
