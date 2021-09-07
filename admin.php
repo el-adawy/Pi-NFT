@@ -42,7 +42,7 @@ try{
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -149,7 +149,7 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
 		<div class="card-body">
                   <p class="card-text">' . $data['TITLE'] . ' - @' . $data['CREATOR_NAME'] . '</p>
 
-              <p class="card-text">' . $data['DESCRIPTION'] . '<br />You can Buy now this NFT or wait until you can bid on a Auction.</p>
+              <p class="card-text">' . $data['DESCRIPTION'] . '<br /></p>
 
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
@@ -187,12 +187,12 @@ You can also enter special events to get special edition Pi NFTs, breeding NFT f
                   <div class="col-sm-6 col-md-3 item">
                       <h3>About</h3>
                       <ul>
-                          <li><a href="#">about us</a></li>
-                          <li><a href="#">about pi network</a></li>
-                          <li><a href="#">contact</a></li>
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">About pi network</a></li>
+                          <li><a href="#">Contact Us</a></li>
                           <li><a href="#">FAQ</a></li>
-                          <li><a href="#">terms of use</a></li>
-                          <li><a href="#">privacy policy</a></li>
+                          <li><a href="#">Terms Of Use</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
                       </ul>
                   </div>
                   <div class="col-md-6 item text">
