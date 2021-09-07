@@ -70,7 +70,7 @@ Buy / sell NFT using Pi coins. </p>
 	  $query = $pdo->query('SELECT * FROM NFT');
 
 
-	  echo '<div class="row ">';
+	  echo '<div class="row">';
 
 	  $i = 1;
 
