@@ -72,14 +72,14 @@ try{
 <?php
 
 
-  function display_nft_card($id, $title, $creator_name, $description, $price){
+  function display_nft_card($id, $title, $creator_name, $description = "", $price){
 
     echo '<div class="col-md-4">
     <div class="card mb-4 box-shadow">	       
       <a href="index.php?nft-id=' . $id .'"><img class="card-img-top" src="/img/nfts/NFT_' . $id . '.jpg" data-holder-rendered="true" style="height: 300px"></a>
       <div class="card-body">
         <p class="card-text">' . $title . ' - @' . $creator_name . '</p>
-        <p class="card-text">You can Buy now this NFT or wait until you can bid on a Auction.</p>
+        <p class="card-text">You can Buy now this NFT or wait until you can bid on a Auction.<br />' . $description . '</p>
         <div class="btn-group">
           <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
           <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
@@ -98,11 +98,9 @@ try{
         echo '<div class="row">';
         $i = 1;
         while ($data = $query->fetch()) {
-        $i++;
-
-        display_nft_card($data['ID'], $data['TITLE'], $data['CREATOR_NAME'], $data['DESCRIPTION'], $data['PRICE']);
-
-	}
+          $i++;
+          display_nft_card($data['ID'], $data['TITLE'], $data['CREATOR_NAME'], $data['DESCRIPTION'], $data['PRICE']);
+	      }
          
 	 echo'</div></div>';
 	}//endIf
@@ -113,7 +111,7 @@ try{
         $data = $query->fetch();
             display_nft_card($data['ID'], $data['TITLE'], $data['CREATOR_NAME'], $data['DESCRIPTION'], $data['PRICE']);
 	      }
-        
+
 ?>
           </div>
         </div>
