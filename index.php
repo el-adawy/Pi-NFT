@@ -72,7 +72,7 @@ try{
 <?php
 
 
-  function display_nft_card($id, $title, $creator_name, $description = "", $price){
+  function display_nft_card($id, $title, $creator_name, $description, $price){
 
     echo '<div class="col-md-4">
     <div class="card mb-4 box-shadow">	       
@@ -99,7 +99,7 @@ try{
         $i = 1;
         while ($data = $query->fetch()) {
           $i++;
-          display_nft_card($data['ID'], $data['TITLE'], $data['CREATOR_NAME'], $data['DESCRIPTION'], $data['PRICE']);
+          display_nft_card($data['ID'], $data['TITLE'], $data['CREATOR_NAME'], "", $data['PRICE']);
 	      }
          
 	 echo'</div></div>';
