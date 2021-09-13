@@ -1,5 +1,4 @@
 <?php
-
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
@@ -11,7 +10,6 @@ try{
     echo "Impossible d'accéder à la base de données SQLite : ".$e->getMessage();
     die();
 }
-
 ?>
 
 <html lang="en">
@@ -26,6 +24,9 @@ try{
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
+    <!-- Pi SDK Integration -->
+    <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+    <script>Pi.init({ version: "2.0" })</script>
   </head>
 
   <body>
@@ -72,26 +73,26 @@ try{
 <?php
 
 
-  function display_nft_card($id, $title, $creator_name, $description, $price){
+	 function display_nft_card($id, $title, $creator_name, $description, $price){
 
-    echo '<div class="col-md-4">
-    <div class="card mb-4 box-shadow">	       
-      <a href="index.php?nft-id=' . $id .'"><img class="card-img-top" src="/img/nfts/NFT_' . $id . '.jpg" data-holder-rendered="true" style="height: 300px"></a>
-      <div class="card-body">
-        <p class="card-text">' . $title . ' - @' . $creator_name . '</p>
-        <p class="card-text">You can Buy now this NFT or wait until you can bid on a Auction.<br />' . $description . '</p>
-        <div class="btn-group">
-          <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-          <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
-        </div>
-        <div class="d-flex justify-content-between align-items-center"><br>
-          <small class="text-muted"><img src="/img/pi.png" style="height: 10px; margin-bottom: 3px">  '. round($price, 3) . ' </small>
-        </div>
-      </div>
-    </div>
-</div>';
+	    echo '<div class="col-md-4">
+	    <div class="card mb-4 box-shadow">	       
+	      <a href="index.php?nft-id=' . $id .'"><img class="card-img-top" src="/img/nfts/NFT_' . $id . '.jpg" data-holder-rendered="true" style="height: 300px"></a>
+	      <div class="card-body">
+		<p class="card-text">' . $title . ' - @' . $creator_name . '</p>
+		<p class="card-text">You can Buy now this NFT or wait until you can bid on a Auction.<br />' . $description . '</p>
+		<div class="btn-group">
+		  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+		  <button type="button" class="btn btn-sm btn-outline-secondary">Bid</button>
+		</div>
+		<div class="d-flex justify-content-between align-items-center"><br>
+		  <small class="text-muted"><img src="/img/pi.png" style="height: 10px; margin-bottom: 3px">  '. round($price, 3) . ' </small>
+		</div>
+	      </div>
+	    </div>
+	</div>';
 
-  }
+	}
 
 	if (!isset($_GET['nft-id'])){
         $query = $pdo->query('SELECT * FROM NFT');
@@ -116,9 +117,7 @@ try{
           </div>
         </div>
       </div>
-
     </main>
-
       <footer>
           <div class="container">
               <div class="row">
@@ -142,8 +141,5 @@ try{
               </div>
               <p class="copyright">Uneat© 2021</p>
           </div>
-      </footer>
-
-
-  
+      </footer>  
 </html>
