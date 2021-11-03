@@ -27,6 +27,7 @@ try{
     <!-- Pi SDK Integration -->
     <script src="https://sdk.minepi.com/pi-sdk.js"></script>
     <script>Pi.init({ version: "2.0" })</script>
+	  <script src="./index.js"></script>
   </head>
 
   <body>
